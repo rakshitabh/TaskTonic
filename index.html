@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <header>
+            <h1>My Productivity Dashboard</h1>
+            <button id="themeToggle">🌙 Dark Mode</button>
+        </header>
+
+        <!-- To-Do List -->
+        <section class="widget">
+            <h2>📝 To-Do List</h2>
+            <input type="text" id="todoInput" placeholder="Add a task...">
+            <button id="addTodoBtn">Add</button>
+            <ul id="todoList"></ul>
+        </section>
+
+        <!-- Notes App -->
+        <section class="widget">
+            <h2>📒 Notes</h2>
+            <textarea id="notesArea" placeholder="Write your notes here..."></textarea>
+        </section>
+
+        <!-- Pomodoro Timer -->
+        <section class="widget">
+            <h2>⏱️ Pomodoro Timer</h2>
+            <div id="timer">25:00</div>
+            <button id="startTimerBtn">Start</button>
+            <button id="resetTimerBtn">Reset</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
